@@ -1,0 +1,206 @@
+/* Style sheet  */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Jersey+20&family=Jersey+25&family=Science+Gothic:wght@100..900&family=VT323&display=swap');
+/* current fonts: Jersey 10,15,20,25 + Science Gothic + VT323 */
+/* in built selectors */
+html {
+    background-color: #00072d;
+    font-family: 'Jersey 20', sans-serif;
+}
+body{
+  margin-top:100px
+}
+h1 {
+    font-size:3em;
+}
+p {
+    font-size: 1.5em;
+}
+footer p {
+    color:#ffffff;
+    text-align: center;
+    margin-top:40px;
+    font-size: 1em;
+}
+li {
+  margin: 10px 0;
+}
+a {
+  color:#b56576
+}
+a:hover {
+  color:#78d0fc;
+}
+a:active {
+  color:#e56b6f;
+}
+a:visited {
+  color:#eb7f97;
+}
+/* pannel's class */
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  font-family: 'Jersey 20';
+  font-size: 1em;
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+  
+}
+.panels{
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    max-width:700px;
+    border-radius:3px;
+    overflow:hidden;
+    padding:30px;  
+    padding-bottom:40px;
+    background-color: #0a2472;
+    opacity: 1;
+    background-image:  radial-gradient(#0e6ba8 1.1px, transparent 1.1px), radial-gradient(#0e6ba8 1.1px, #0a2472 1.1px);
+    background-size: 44px 44px;
+    background-position: 0 0,22px 22px;
+    box-sizing: border-box;
+    border: 3px solid #a6e1fa;
+    color: #ffffff;
+}
+
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+.webpage-heading {
+  font-size: 3em;
+  font-family: 'Jersey 10';
+  /* font-weight: 600; */
+  font-style:bold;
+}
+
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display: block;
+  align-self:center;
+
+}
+#one ~.tabs #one-tab {
+    background:#355070;
+  color:#ffffff;
+  border-top: 3px solid #000;
+  border-radius: 10px 10px 0px 0px;
+}
+#two ~.tabs #two-tab {
+    background:#6d597a;
+  color:#ffffff;
+  border-top: 3px solid #000;
+  border-radius: 10px 10px 0px 0px;
+}
+#three ~.tabs #three-tab {
+    background:#b56576;
+  color:#ffffff;
+  border-top: 3px solid #000;
+  border-radius: 10px 10px 0px 0px;
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background: #a6e1fa;
+  color:#000000;
+  border-top: 3px solid #000;
+  border-radius: 10px 10px 0px 0px;
+}
+/*Sticky note Classes */
+.rotate-element-left {
+    transform: rotate(-10deg);
+}
+.rotate-element-right {
+    transform: rotate(10deg);
+}
+.slight-rotate-left {
+  transform: rotate(-5deg);
+}
+.slight-rotate-right {
+  transform: rotate(5deg);
+}
+.flex-container{
+  display:flex;
+  flex-direction: row;
+  flex:0 0 auto;
+  flex-wrap: wrap;
+  margin:10px;
+  gap: 20px
+}
+.sticky-note{ 
+    position:relative;
+    box-sizing: content-box;
+    box-shadow:10px 10px 5px #00072d;
+    height:auto;
+    padding:20px;
+    color:#000;
+    background-color: #ffffff;
+    width:auto;
+    height:auto;
+    align-content: stretch;
+    text-align: center;
+}
+#sticky-note-color1 {
+  background-color: #78d0fc;
+}
+#sticky-note-color2 {
+  background-color: #787afc;
+}
+
+.text-effect  {
+  position:relative;
+  z-index: 0;
+  top: 0;
+  transition: top ease 0.5s;
+  overflow-wrap: normal;
+}
+.text-effect:hover  {
+ top: -5px;
+ color:#0e6ba8
+}
+/* Code for an image gallery*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+  padding: 0px;
+  max-width: 1000px;
+  margin: auto;
+  align-items: flex-end;
+}
+.gallery img {
+  max-width: 300px;
+  height:auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.gallery img:hover {
+  transform: scale(1.5);
+  transition:  transform  0.2s ease-in-out;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
