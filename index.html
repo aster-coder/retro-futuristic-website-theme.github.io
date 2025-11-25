@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is a demo website made to practice some css design skills-->
+<!--Credits for the origingal source for the html css used is found in the readme.md file-->
+<!--Simple HTML and CSS, no Javascript used-->
+<!--Created by: Astra-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="warpper">
+        <input class="radio" id="one" name="group" type="radio" checked>
+        <input class="radio" id="two" name="group" type="radio">
+        <input class="radio" id="three" name="group" type="radio">
+        <div class="tabs">
+            <label class="tab " id="one-tab" for="one">Tab One</label>
+            <label class="tab " id="two-tab" for="two">Tab Two</label>
+            <label class="tab " id="three-tab" for="three">Tab Three</label>
+        </div>
+        <div class="panels">
+            <div class="panel" id="one-panel">
+                <div class="panel-title">
+                    <h1 class="webpage-heading">Retro Futuristic Website Template
+                    </h1>
+                </div>
+                <p>This is a simple one page website template that can be used for a portfolio or showing specific images</p>
+                <p>Tab 1 shows the sticky-note classes and how they can be used to add some personality to different containers</p>
+                <p>Tab 2 shows a gallery that can be used for showing photographs or artwork</p>
+                <p>You can add on more tabs and panels within the stylesheet, and just apply the classes</p>
+                <div>
+                        <h1>Heading</h1>
+                        <h2>Heading</h2>
+                        <h3>Heading</h3>
+                        <h4>Heading</h4>
+                        <h5>Heading</h5>
+                        <h6>Heading</h6>
+                        <p>Paragraph</p>
+                        <a href="#">This is a link</a>
+                    </div>
+                <div class="flex-container">
+                    <div class="sticky-note flex-child">
+                        <p>This is one sticky note</p>
+                    </div>
+                    <div class="sticky-note flex-child">
+                        <p>This is another sticky note</p>
+                    </div>
+                    <div class="sticky-note flex-child">
+                        <p>This is yet another sticky note</p>
+                    </div>
+                    <div class="sticky-note flex-child">
+                        <p>again a sticky note</p>
+                    </div>
+                    <div class="sticky-note rotate-element-left flex-child">
+                        <p>rotated left sticky note</p>
+                    </div>
+                    <div class="sticky-note rotate-element-right flex-child">
+                        <p>rotated right sticky note</p>
+                    </div>
+                    <div class="sticky-note slight-rotate-left flex-child">
+                        <p>(smaller)rotated left note</p>
+                    </div>
+                    <div class="sticky-note slight-rotate-right flex-child">
+                        <p>(smaller)rotated right note</p>
+                    </div>
+                    <div class="sticky-note" id="sticky-note-color1">
+                        <p>You can change the colour of each sticky note by assigning a new id to each one, for example this sticky note has a different colour and uses the id #sticky-note-color1 </p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        <div class="panel" id="two-panel">
+            <div class="panel-title">
+                <h1 class="webpage-heading">Tab 2
+                </h1>
+            </div>
+            <h1>Image Gallery</h1>
+            <p>You can hover over the images with a cursor to expand them, and you can just add images in the gallery div</p>
+            <p>Images are sourced from unsplash</p>
+            <div class="gallery">
+                <img src ="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                <img src ="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?q=80&w=770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                <img src ="https://images.unsplash.com/photo-1559214369-a6b1d7919865?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                <img src ="https://images.unsplash.com/photo-1516934024742-b461fba47600?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                
+                
+            </div>
+        </div>
+        <div class="panel" id="three-panel">
+            <div class="panel-title" id="third-panel">
+                <h1 class="webpage-heading">Tab 3
+                </h1>
+                <div>
+                    <h2>Extra tabs to show the design, you can customize the tab colours and its active color</h2>
+                    
+                </div>
+            </div>
+        </div><!--For Warpper-->
+        </div> <!--For panels -->
+    </div>
+</body>
+<footer>
+    <p>&copy; Footer Copyright area</p>
+</footer>
+</html>
